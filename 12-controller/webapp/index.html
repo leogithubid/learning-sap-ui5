@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>12-Controller</title>
+        <!-- Bootstrapping 
+             first load the open ui5 core library
+             then sap.m library
+             then set the theme
+             then set the home folder alias -->
+        <script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-resourceroots='{
+                    "home" : "./"
+                }'
+        ></script>
+        <!-- We are create a JS view below. I am yet to unearth this syntax
+        from openui5 sdk, anyways
+        create a JS view, give the view location and type
+        place it in the div -->
+        <script>
+            var oView = new sap.ui.view("jsView",{
+                viewName : "home.view.main",
+                type : "JS"
+            });
+            oView.placeAt("pageContent");
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <h1>Welcome to UI5 controller</h1>
+        <div id="pageContent"></div>
+    </body>
+</html>

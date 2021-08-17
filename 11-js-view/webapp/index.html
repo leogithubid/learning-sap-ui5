@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>11-JS View</title>
+        <script src="http://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-resourceroots='{
+                    "home" : "./"
+                }'
+        ></script>
+        <!-- Resource roots is with single quotes, if we make it with
+        double quotes it breaks -->
+        <script>
+/*             var oButton = new sap.m.Button("buttonClickMe",{
+                text : "Click Me"
+            });
+            oButton.placeAt("pageContent"); */
+            var oView = new sap.ui.view("jsView",{ //from where did this come? 
+                viewName : "home.view.main",
+                type : "JS"
+            }) ;
+            oView.placeAt("pageContent");
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <h1>Welcome to UI5 Controller</h1>
+        <div id="pageContent"></div>
+    </body>
+</html>
