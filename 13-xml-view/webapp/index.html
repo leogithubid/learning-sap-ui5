@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>13-XML View</title>
+        <script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-resourceroots='{
+                    "home" : "./"
+                }'
+        ></script>
+        <script>
+            var oView = new sap.ui.core.mvc.XMLView("xmlView",{
+                viewName : "home.view.main",
+                type : "XMLView"
+            });
+            oView.placeAt("pageContent");
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <h1>Welcome to UI5 - XML View</h1>
+        <div id="pageContent"></div>
+    </body>
+</html>

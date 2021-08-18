@@ -1,0 +1,7 @@
+<mvc:XMLView xmlns:mvc="sap.ui.core.mvc"
+             controllerName="home.controller.main"
+             xmlns="sap.m">
+    <Input id="inputUserName" placeholder="Please enter user name here"></Input>
+    <Input id="inputPassword" placeholder="Please enter password here"></Input>
+    <Button id="buttonLogin"  text="Login" press="checkLogin"></Button>
+</mvc:XMLView>
