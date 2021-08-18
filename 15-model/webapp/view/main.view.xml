@@ -1,0 +1,25 @@
+<mvc:XMLView xmlns:mvc="sap.ui.core.mvc"
+             xmlns="sap.m"
+             xmlns:form="sap.ui.layout.form"
+             xmlns:core="sap.ui.core"
+             controllerName="home.controller.main">
+             <form:SimpleForm editable="true" layout="ResponsiveGridLayout">
+             <form:title>
+                <core:Title text="Employee Details" icon="sap-icon://business-card"></core:Title>
+             </form:title>
+             <!-- Editable = true -> This is to align the labels with their Input fields in the same line
+             Simple Form has default aggregation content that accepts anything of type
+             Element, so we can put all our controls that are derived from Elements here
+             without creating a namespace or trying anything special 
+             There are 4 syntaxes for binding data to the fields : 2 at view, 2 at controller
+             For this to work we have to set the bindix syntax complex in index.html head-->
+                <Label id="labelEmployeeId" text="Employee Id"></Label>
+                <Input id="inputEmployeeId" value="{/employeeStructure/employeeId}"></Input>
+                <Label id="labelEmployeeName" text="Employee Name"></Label>
+                <Input id="inputEmployeeName" value="{path:'/employeeStructure/employeeName'}"></Input>
+                <Label id="labelSalary" text="Salary"></Label>
+                <Input id="inputSalary"></Input>
+                <Label id="labelCurrency" text="Currency"></Label>
+                <Input id="inputCurrency"></Input>
+             </form:SimpleForm>
+</mvc:XMLView>

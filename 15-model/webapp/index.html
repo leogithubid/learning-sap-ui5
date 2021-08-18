@@ -1,26 +1,24 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>14-Events</title>
+        <title>15-Model</title>
         <script src="http://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-         data-sap-ui-libs="sap.m"
-         data-sap-ui-theme="sap_belize"
-         data-sap-ui-resourceroots='{
-             "home" : "./"
-         }'
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_belize"
+        data-sap-ui-bindingSyntax="complex"
+        data-sap-ui-resourceroots='{
+            "home" : "./"
+        }'
         ></script>
         <script>
-            /* Create XML view using sap ui libraries and give the location
-            of the XML view file in the webapp folder  */
             var oView = new sap.ui.core.mvc.XMLView("xmlView",{
                 viewName : "home.view.main",
-                type : "XMLView"
+                type     : "XMLView"
             });
             oView.placeAt("pageContent");
         </script>
     </head>
     <body class="sapUiBody">
-        <h1>Welcome to UI5 - Events</h1>
+        <h1>Welcome to UI5 - Model</h1>
         <div id="pageContent"></div>
     </body>
 </html>
