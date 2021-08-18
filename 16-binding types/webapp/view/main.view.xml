@@ -1,0 +1,22 @@
+<mvc:XMLView xmlns:mvc="sap.ui.core.mvc"
+             xmlns:core="sap.ui.core"
+             xmlns:form="sap.ui.layout.form"
+             controllerName="home.controller.main"
+             xmlns="sap.m">
+    <form:SimpleForm editable="true" layout="GridLayout">
+        <form:title>
+            <core:Title text="Employee Details">
+            </core:Title>
+        </form:title>
+        <Label id="labelEmployeeId" text="Employee Id" ></Label>
+        <Input id="inputEmployeeId" value="{/employeeStructure/employeeName}"></Input>
+        <Label id="labelEmployeeName" text="Employee Name"></Label>
+        <Input id="inputEmployeeName"></Input>
+        <Label id="labelSalary" text="Salary"></Label>
+        <Input id="inputSalary"
+        enabled = "{= ${/employeeStructure/salary} > 1000000 ? false : true}"
+        ></Input>
+        <Label id="labelCurrency" text="Currency"></Label>
+        <Input id="inputCurrency"></Input>
+    </form:SimpleForm>
+</mvc:XMLView>

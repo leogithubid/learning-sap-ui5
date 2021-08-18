@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
+<!-- 
+    Binding modes : 
+    - One way : Model -> View
+- Two way : Default Model-> View and View->Model
+
+Binding Types:
+Property binding - we saw in the previous one 15
+Expression binding - look at the condition added for salary 
+Aggregation binding - for tables, next unit
+Element Binding? -->
         <title>16-Binding Types</title>
+        <script src="http://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_belize"
+        data-sap-ui-bindingSyntax="complex"
+        data-sap-ui-resourceroots='{
+            "home" : "./"
+        }'
+        ></script>
+        <script>
+            var oView = new sap.ui.core.mvc.XMLView("xmlView",{
+                viewName : "home.view.main",
+                type     : "XMLView"
+            });
+            oView.placeAt("pageContent");
+        </script>
     </head>
     <body>
         <h1>Welcome to UI5 - Binding </h1>
+        <div id="pageContent"></div>
     </body>
 </html>
