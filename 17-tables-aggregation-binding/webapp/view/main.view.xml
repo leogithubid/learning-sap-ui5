@@ -1,0 +1,74 @@
+<mvc:XMLView xmlns:mvc="sap/ui/core/mvc"
+             xmlns="sap.m"
+             xmlns:u="sap.ui.unified"
+             xmlns:core="sap.ui.core"
+             xmlns:table="sap.ui.table"
+             controllerName="home.controller.main">
+<!--     I have no idea how row aggregation is set like this? 
+    Table has a defaul aggregation called columns 
+    However, I have copied it from APIReference Samples - GridTable basic-->
+    <table:Table alternateRowColors="true" rows="{/empTab}">
+        <table:title>
+            <Label text="Employee Details"></Label>
+        </table:title>
+        <table:toolbar>
+            <Toolbar>
+                <Button text="Flip Model" press="flipModel">
+                </Button>
+            </Toolbar>
+        </table:toolbar>
+        <table:columns>
+            <table:Column>
+                <Label text="Employee Id"></Label>
+                <table:template>
+                    <Text text="{empId}"></Text>
+                </table:template>
+            </table:Column>
+            <table:Column>
+                <Label text="Employee Name"></Label>
+                <table:template>
+                    <Text text="{empName}"></Text>
+                </table:template>
+            </table:Column>
+            <table:Column>
+                <Label text="Salary"></Label>
+                <table:template>
+                    <u:Currency value="{salary}" currency="{currency}"></u:Currency>
+                </table:template>
+            </table:Column>
+<!--             <table:Column>
+                <Label text="Currency"></Label>
+                <table:template>
+                    <Text text="{currency}"></Text>
+                </table:template>
+            </table:Column> -->
+            <table:Column>
+                <Label text="Smoker"></Label>
+                <table:template>
+                    <CheckBox selected="{smoker}">     
+                    </CheckBox>
+                </table:template>
+            </table:Column>
+            <table:Column>
+                <Label text="Marital Status"></Label>
+                <table:template>    
+                        <Select selectedKey="{maritalStatus}">
+                            <items>
+                                <core:Item key="m" text="married">
+                                </core:Item>
+                                <core:Item key="s" text="single">
+                                </core:Item>
+                            </items>
+                        </Select>
+                </table:template>
+            </table:Column>
+            <table:Column>
+                <Label text="Rating"></Label>
+                <table:template>
+                    <RatingIndicator value="{rating}">
+                    </RatingIndicator>
+                </table:template>
+            </table:Column>
+        </table:columns>
+    </table:Table>
+</mvc:XMLView>

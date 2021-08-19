@@ -1,0 +1,104 @@
+{
+	"empStr": {
+		"empId": 100,
+		"empName": "Omega",
+		"salary": 10000,
+		"currency": "",
+		"smoker": "",
+		"maritalStatus": "",
+		"rating": 1
+	},
+	"empTab": [{
+			"empId": 100,
+			"empName": "Alex",
+			"salary": 10000,
+			"currency": "AUD",
+			"smoker": true,
+			"maritalStatus": "single",
+			"rating": 1
+		},
+		{
+			"empId": 200,
+			"empName": "Beth",
+			"salary": 80000,
+			"currency": "USD",
+			"smoker": true,
+			"maritalStatus": "married",
+			"rating": 3
+		},
+		{
+			"empId": 300,
+			"empName": "Gerry",
+			"salary": 30000,
+			"currency": "USD",
+			"smoker": false,
+			"maritalStatus": "married",
+			"rating": 3
+		},
+		{
+			"empId": 400,
+			"empName": "Diana",
+			"salary": 40000,
+			"currency": "USD",
+			"smoker": true,
+			"maritalStatus": "single",
+			"rating": 3
+		},
+		{
+			"empId": 500,
+			"empName": "Edmilson",
+			"salary": 50000,
+			"currency": "EUR",
+			"smoker": true,
+			"maritalStatus": "single",
+			"rating": 5
+		},
+		{
+			"empId": 600,
+			"empName": "Zeba",
+			"salary": 10000,
+			"currency": "USD",
+			"smoker": false,
+			"maritalStatus": "single",
+			"rating": 1
+		},
+		{
+			"empId": 700,
+			"empName": "Ethan",
+			"salary": 30000,
+			"currency": "INR",
+			"smoker": false,
+			"maritalStatus": "single",
+			"rating": 3
+		},
+		{
+			"empId": 800,
+			"empName": "Thimothi",
+			"salary": 50000,
+			"currency": "EUR",
+			"smoker": false,
+			"maritalStatus": "married",
+			"rating": 2
+		},
+		{
+			"empId": 900,
+			"empName": "Iris",
+			"salary": 90000,
+			"currency": "INR",
+			"smoker": true,
+			"maritalStatus": "married",
+			"rating": 2
+		},
+		{
+			"empId": 1000,
+			"empName": "Kaplan",
+			"salary": 40000,
+			"currency": "USD",
+			"smoker": false,
+			"maritalStatus": "married",
+			"rating": 3
+		}
+
+
+	]
+}
