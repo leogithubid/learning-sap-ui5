@@ -1,0 +1,7 @@
+<mvc:XMLView xmlns:mvc="sap.ui.core.mvc"
+             controllerName="home.controller.main"
+             xmlns="sap.m">
+    <Label text="hello"></Label>
+    <!-- I found creating a table a bit complex yesterday, so create a table
+    bind the data to JSON model and then proceed to next steps -->
+</mvc:XMLView>
