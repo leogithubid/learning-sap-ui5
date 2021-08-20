@@ -1,16 +1,28 @@
 sap.ui.define([
-"sap/ui/core/mvc/Controller",//default for all controllers in SAP UI5
-"home/model/model"           //loading the JS file that will create models
-], function(oController,modelJS) { //look at the second argument - that points to model.JS fiel
-    return oController.extend("home.controller.main",{
-        //in the initialisaiton of the controller create JSON model
-        onInit:function(){
-            console.log("controller");
-            //use the create JSON Model method in the model.JS and load data
-            //step 1 and 2 are inside this model.JS file function
-            var modelJSON = modelJS.createJSONModel("model/mockData/mockData.json");
-            //set the model
-            sap.ui.getCore().setModel(modelJSON);
-        }
-    });    
-});
+    "sap/ui/core/mvc/Controller",
+    "home/model/model"
+    ], function(oController,modelJS) {
+        return oController.extend("home.controller.main",{
+    /* We have outsourced model creation logic to MODEL.JS file
+    Thus we can reuse the file and create multiple models just by passing the JSON file path
+    Do check out model.JS file !!
+    Here, then we load the file as a dependency, this gives us modelJS to play with
+    Then we use it to call the function createModel and load it with data
+    And then set it to the core  */
+            onInit:function(){
+                console.log("controller");
+                oModelOne = modelJS.createJSONModel("model/mockData/mockData.json");
+                sap.ui.getCore().setModel(oModelOne);
+                oResourceModel = modelJS.createResourceModel("i18n/i18n.properties");
+                sap.ui.getCore().setModel(oResourceModel,"i18n");
+            },
+            flipModel:function(){
+               var oModel = modelJS.createXMLModel("model/mockData/mockData3.xml");
+               sap.ui.getCore().setModel(oModel);
+                
+            }
+        });
+        
+    });
+    
+    
