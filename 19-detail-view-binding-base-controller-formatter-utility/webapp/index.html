@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>19-Element Binding-Formatter-Utilities-Base Controller</title>
+    <script src="http://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-bindingSyntax="complex"
+            data-sap-ui-resourceRoots='{
+                "home" : "./"
+            }'
+    >
+    </script>
+    <script>
+        var oView = new sap.ui.core.mvc.XMLView("view",{
+            viewName : "home.view.main",
+            type : "XML"
+        });
+        oView.placeAt("content");
+    </script>
+</head>
+<body class="sapUiBody">
+    <div id="content"></div>
+</body>
+</html>
