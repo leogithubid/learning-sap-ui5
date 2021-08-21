@@ -3,9 +3,9 @@
 		"empId": 100,
 		"empName": "Omega",
 		"salary": 10000,
-		"currency": "",
-		"smoker": "",
-		"maritalStatus": "",
+		"currency": "JPY",
+		"smoker": "true",
+		"maritalStatus": "married",
 		"rating": 1
 	},
 	"empTab": [{

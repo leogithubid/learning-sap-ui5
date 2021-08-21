@@ -1,0 +1,9 @@
+<mvc:View id="viewOne"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m"
+          controllerName="sap.ui.demo.controller.viewOne">
+          <Page>
+            <Text text="First View"></Text>
+            <Button text="Next" press="goNext"></Button>
+          </Page>
+</mvc:View>

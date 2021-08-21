@@ -1,0 +1,14 @@
+<mvc:View xmlns:mvc="sap/ui/core/mvc"
+          xmlns:form="sap.ui.layout.form"
+          controllerName="sap.ui.demo.controller.loginPage"
+          xmlns="sap.m">
+          <Page>
+            <form:SimpleForm editable="true">
+                <Label id="lblUserName"  text="User Name"></Label>
+                <Input id="inpUserName"  placeholder="User Name"></Input>
+                <Label id="lblPassword"  text="Password"></Label>
+                <Input id="inpPassword"  placeholder="Password"></Input>
+            </form:SimpleForm>
+                <Button id="btnLogin"    text="Login" press="clickLogin"></Button>
+          </Page>
+</mvc:View>

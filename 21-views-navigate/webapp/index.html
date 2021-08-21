@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>21-Views-and-Navigation</title>
+        <script src="http://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-resourceroots='{
+                    "sap.ui.demo" : "./" 
+                }'
+        ></script>
+        <script>
+            var oComponent = new sap.ui.core.ComponentContainer("",{
+                name : "sap.ui.demo" //give only path for home/webapp folder
+            });
+            oComponent.placeAt("content");
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <div id="content"></div>
+    </body>
+</html>

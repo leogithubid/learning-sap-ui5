@@ -1,0 +1,6 @@
+<!-- This is the first view for the app App view -->
+<mvc:View xmlns:mvc="sap/ui/core/mvc"
+          xmlns="sap.m">
+        <Label text="Welcome to App View"></Label>
+        <App id="idApp"></App>
+</mvc:View>
