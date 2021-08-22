@@ -1,3 +1,11 @@
+<!-- load mvc name space
+     load sap.m as default
+     controller path is set
+     then create a Page
+     Inside create ObjectHeader, bind the properties to JSON fields directly
+    Now the question comes how does it know we have to link it to "fruits" collection?
+    This is done before navigating to this view ie, in the onPress event method
+    that will be written in the controller of master view -->
 <mvc:View id="detail"
           xmlns:mvc="sap.ui.core.mvc"
           xmlns="sap.m"
