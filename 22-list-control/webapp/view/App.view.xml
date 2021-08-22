@@ -1,0 +1,6 @@
+<!-- return App container -->
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+             xmlns="sap.m">
+             <App id="appContainer">
+             </App>
+</mvc:View>

@@ -1,0 +1,13 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m">
+          <Page id="pageOne">
+            <List>
+              <items>
+                <FeedListItem icon="sap-icon://bus-public-transport" text="Hello"></FeedListItem>
+                <DisplayListItem label="Covid"></DisplayListItem>
+                <FeedListItem icon="sap-icon://badge" text="badge"></FeedListItem>
+                <StandardListItem icon="sap-icon://bell" title="bell"></StandardListItem>
+              </items>
+            </List>
+          </Page>
+</mvc:View>

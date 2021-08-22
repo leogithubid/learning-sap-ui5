@@ -1,0 +1,13 @@
+<mvc:XMLView xmlns:mvc="sap/ui/core/mvc"
+             xmlns="sap.m"
+             controllerName = "sap.ui.demo.controller.fruits">
+             <Page id="pageOne">
+                 <SearchField search="onSearch" ></SearchField>
+                <List id="fruitsList" items="{/fruits}">
+                    <items>
+                        <ObjectListItem number="{price}" title="{name}" icon="{image}">  
+                        </ObjectListItem>
+                    </items>
+                </List>
+             </Page>
+</mvc:XMLView>
