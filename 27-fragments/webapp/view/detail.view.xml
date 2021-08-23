@@ -1,0 +1,30 @@
+<mvc:View id="detail"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:core="sap.ui.core"
+          xmlns="sap.m"
+          controllerName="sap.ui.demo.controller.detail">
+          <Page title="Fruit Details" id="detailPage" showNavButton="true" >
+            <ObjectHeader id="objectHeader" 
+                          title="{name}" 
+                          number="{price}" 
+                          icon="{image}">
+              <ObjectAttribute title="Genus" text="{genus}"></ObjectAttribute>
+              <ObjectAttribute title="Family" text="{family}"></ObjectAttribute>
+              <ObjectAttribute title="Order" text="{order}"></ObjectAttribute>
+            </ObjectHeader>
+            <IconTabBar>
+              <items>
+                <IconTabFilter icon="sap-icon://information">
+                  <core:Fragment fragmentName="sap.ui.demo.fragments.nutrition" type="XML">
+                  </core:Fragment>
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://supplier">
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://world">
+                  <core:Fragment fragmentName="sap.ui.demo.fragments.cities" type="XML">
+                  </core:Fragment>
+                </IconTabFilter>
+              </items>
+            </IconTabBar>
+          </Page>
+</mvc:View>

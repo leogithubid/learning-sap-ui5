@@ -1,0 +1,24 @@
+<!-- Fragment Definition
+    If you look at the sdk you will see Fragment as sap.ui.core.Fragment
+    From where did the fragment came? better look at the samples 
+Comobo Box
+Usage
+When to use:
+    You need to select only one item in a long list of options (between 13 and 200) or your custom user input.
+When not to use:
+    You need to select between only two options. Use a switch control instead.
+    You need to select between up to 12 options. Use a select control instead.
+    You need to select between more than 200 options. Use a input control with value help instead.
+-->
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+                         xmlns="sap.m">
+                         <Select items="{/cities}">
+                            <core:Item key="{city}" text="{city}">
+                            </core:Item>
+                        </Select>
+                        <VBox ></VBox>
+                        <ComboBox items="{/cities}">
+                            <core:Item key="{city}" text="{city}">
+                            </core:Item>    
+                        </ComboBox>
+</core:FragmentDefinition>

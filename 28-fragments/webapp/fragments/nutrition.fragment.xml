@@ -1,0 +1,19 @@
+<!-- Fragment Definition
+    If you look at the sdk you will see Fragment as sap.ui.core.Fragment
+    From where did the fragment came? better look at the samples -->
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+                         xmlns:form="sap.ui.layout.form"
+                         xmlns="sap.m">
+                         <form:SimpleForm >            
+                            <Label text="Carbohydrates" ></Label>
+                            <Text text="{nutritions/carbohydrates}"></Text>
+                            <Label text="Protein" ></Label>
+                            <Text text="{nutritions/protein}"></Text>
+                            <Label text="Fat" ></Label>
+                            <Text text="{nutritions/fat}"></Text>
+                            <Label text="Sugar" ></Label>
+                            <Text text="{nutritions/sugar}"></Text>
+                            <Label text="Calories" ></Label>
+                            <Text text="{nutritions/calories}"></Text>
+                        </form:SimpleForm>    
+</core:FragmentDefinition>
