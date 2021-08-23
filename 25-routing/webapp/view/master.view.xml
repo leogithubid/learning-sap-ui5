@@ -1,4 +1,4 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc"
+<mvc:XMLView xmlns:mvc="sap.ui.core.mvc"
           xmlns="sap.m"
           controllerName="sap.ui.demo.controller.master">
           <Page id="pageOne">
@@ -7,4 +7,4 @@
                     </ObjectListItem>
               </List>
           </Page>
-</mvc:View>
+</mvc:XMLView>

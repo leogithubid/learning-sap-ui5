@@ -5,9 +5,12 @@ sap.ui.define(["sap/ui/core/UIComponent"],function(UIComponent){
         },
         init:function(){
             UIComponent.prototype.init.apply(this);
+            var oRouter = this.getRouter();
+            console.log(oRouter);
+            oRouter.initialize();
         },
-        createContent:function(){
-            var appView = new sap.ui.core.mvc.XMLView("appView",{
+//        createContent:function(){
+/*             var appView = new sap.ui.core.mvc.XMLView("appView",{
                 viewName : "sap.ui.demo.view.App",
                 type : "XML"
             });
@@ -20,7 +23,7 @@ sap.ui.define(["sap/ui/core/UIComponent"],function(UIComponent){
                 type     : "XML"
             });
             appView.byId("splitApp").addMasterPage(masterView).addDetailPage(detailView);
-            return appView;
-        }
+            return appView; */
+//        }
     });
 });

@@ -5,17 +5,26 @@ sap.ui.define(
 
             },
             onPress:function(oEvent){
-                console.log(oEvent.getParameters());
+                console.log("onPress");
+                //we have to get the Router - how to get it? 
+                //Router is defined in Component.JS so first we have to that
+                console.log(this.getOwnerComponent());
+                //from this get the router
+                console.log(this.getOwnerComponent().getRouter());
+                //using the router navigate to another target
+                this.getOwnerComponent().getRouter().navTo("detail");
+
+/*                 console.log(oEvent.getParameters());
                 console.log(oEvent.getParameter("listItem"));
                 console.log(oEvent.getParameter("listItem").getBindingContextPath());
-                this.onNext(oEvent.getParameter("listItem").getBindingContextPath());
+                this.onNext(oEvent.getParameter("listItem").getBindingContextPath()); */
             },
             //how do we know selected Path is the argument here?
             //because we created it and we are calling that from onPress
             //why only direct binding to elements in detail view without /fruits?
             //because we are binding the path here
             onNext:function(selectedPath){
-                console.log(selectedPath);
+/*                 console.log(selectedPath);
                 //get App view
                 console.log(this.getView());
                 console.log(this.getView().getParent());
@@ -27,7 +36,7 @@ sap.ui.define(
                 //get contents of page two
                 console.log(oView2.getContent());
                 console.log(oView2.getContent()[0].getContent());
-                oView2.getContent()[0].getContent()[0].bindElement(selectedPath);
+                oView2.getContent()[0].getContent()[0].bindElement(selectedPath); */
             }
         })
     }

@@ -3,7 +3,7 @@
           xmlns="sap.m"
           controllerName="sap.ui.demo.controller.detail">
           <Page id="detailPage" showNavButton="true" >
-            <ObjectHeader id="objectHeader" title="{name}" number="{price}" icon="{image}">
+            <ObjectHeader text="Fruit Details" id="objectHeader" title="{name}" number="{price}" icon="{image}">
             </ObjectHeader>
           </Page>
 </mvc:View>

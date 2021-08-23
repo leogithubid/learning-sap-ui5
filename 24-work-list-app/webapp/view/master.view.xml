@@ -2,7 +2,7 @@
      then defaul name space sap.m
     then give controller path 
     inside this create a Page, this page we can add it in the Component.JS
-    Inside it create a list Control, bind it to fruits JSON set
+    Inside it create a list Control, bind it to fruits JSON collection
     Inside the list Control, create Object List Item and bind the attributes
     Note : here we are binding items="{/fruits}" at the List level
     and then only the properties at ObjectListItem level ie, title="{name}"-->

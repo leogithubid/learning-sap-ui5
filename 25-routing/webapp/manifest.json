@@ -25,6 +25,44 @@
         "async": true,
         "id": "app"
     },
+    "routing":{
+      "config" : {
+        "routerClass" : "sap.m.routing.Router",
+        "viewType" : "XML",
+        "viewPath" : "sap.ui.demo.view",
+        "controlId" : "splitApp",
+        "async" : true
+      },
+      "routes" : [
+        {
+          "name" : "master",
+          "pattern" : "",
+          "target" : ["home","blank"]
+        },
+        {
+          "name" : "detail",
+          "pattern" : "detail",
+          "target" :  ["home","detail"]
+        }
+      ],
+      "targets" : {
+        "home" : {
+          "viewName" : "master",
+          "type" : "XML",
+          "controlAggregation" : "masterPages"
+        },
+        "blank" : {
+          "viewName" : "blank",
+          "type" : "XML",
+          "controlAggregation" : "detailPages"
+        },
+        "detail" : {
+          "viewName" : "detail",
+          "type" : "XML",
+          "controlAggregation" : "detailPages"
+        }
+      }
+    },
     "dependencies": {
       "minUI5Version": "1.60",
       "libs": {

@@ -1,5 +1,5 @@
-<mvc:View xmlns:mvc="sap/ui/core/mvc"
+<mvc:XMLView xmlns:mvc="sap/ui/core/mvc"
           xmlns="sap.m">
           <SplitApp id="splitApp">
           </SplitApp>
-</mvc:View>
+</mvc:XMLView>
