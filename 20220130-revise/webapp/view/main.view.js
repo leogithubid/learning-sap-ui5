@@ -14,10 +14,7 @@ sap.ui.jsview("home.view.main",{ //view path
         var oButton = new sap.m.Button("idButton",{
             text : "Click Me",
             icon : "sap-icon://hello-world",
-            press : function(){
-                var name = oInput.getValue();
-                alert(" Hello " + name + ", Welcome to UI5 from JS View !")
-            }
+            press : oController.welcomeBack
         });
         //oButton.placeAt("button");
         return [oInput,oButton];//never forget to return the view or the content of view
