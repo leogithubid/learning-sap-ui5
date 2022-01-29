@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Back to UI5</title>
+        <script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs = "sap.m"
+                data-sap-ui-theme = "sap_belize"
+                data-sap-ui-resourceroots='{
+                    "home" : "./"
+                }'>
+        </script> 
+        <script>   
+             var oInput = new sap.m.Input("idInputField",{
+                 width : "500px",
+                 placeholder: "Please enter your name here"
+             });
+             oInput.placeAt("inputField");
+             var oButton = new sap.m.Button("idButton",{
+                 text : "Click Me",
+                 icon : "sap-icon://hello-world",
+                 press : function(){
+                     var name = oInput.getValue();
+                     alert(" Hello " + name + ", Welcome back to UI5 !")
+                 }
+             });
+           oButton.placeAt("button");
+        </script>           
+    </head>
+    <body>
+        <h1>Welcome back to UI5</h1>
+        <div id="inputField"></div>
+        <div id="button"></div>
+    </body>
+</html>
