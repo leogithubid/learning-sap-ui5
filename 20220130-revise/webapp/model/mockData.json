@@ -10,93 +10,93 @@
 	},
 	"empTab": [{
 			"empId": 100,
-			"empName": "Omicron",
+			"empName": "Alpha",
 			"salary": 10000,
 			"currency": "AUD",
 			"smoker": true,
-			"maritalStatus": "single",
+			"maritalStatus": "s",
 			"rating": 1
 		},
 		{
 			"empId": 200,
-			"empName": "Beth",
-			"salary": 80000,
-			"currency": "USD",
-			"smoker": true,
-			"maritalStatus": "married",
-			"rating": 3
+			"empName": "Beta",
+			"salary": 20000,
+			"currency": "EUR",
+			"smoker": false,
+			"maritalStatus": "s",
+			"rating": 2
 		},
 		{
 			"empId": 300,
-			"empName": "Gerry",
+			"empName": "Gamma",
 			"salary": 30000,
 			"currency": "USD",
 			"smoker": false,
-			"maritalStatus": "married",
+			"maritalStatus": "m",
 			"rating": 3
 		},
 		{
 			"empId": 400,
-			"empName": "Diana",
+			"empName": "Delta",
 			"salary": 40000,
-			"currency": "USD",
+			"currency": "INR",
 			"smoker": true,
-			"maritalStatus": "single",
-			"rating": 3
+			"maritalStatus": "s",
+			"rating": 4
 		},
 		{
 			"empId": 500,
-			"empName": "Edmilson",
+			"empName": "Epsilon",
 			"salary": 50000,
 			"currency": "EUR",
 			"smoker": true,
-			"maritalStatus": "single",
+			"maritalStatus": "s",
 			"rating": 5
 		},
 		{
 			"empId": 600,
-			"empName": "Zeba",
-			"salary": 10000,
+			"empName": "Zeta",
+			"salary": 60000,
 			"currency": "USD",
-			"smoker": false,
-			"maritalStatus": "single",
+			"smoker": true,
+			"maritalStatus": "m",
 			"rating": 1
 		},
 		{
 			"empId": 700,
-			"empName": "Ethan",
-			"salary": 30000,
-			"currency": "INR",
+			"empName": "Eta",
+			"salary": 70000,
+			"currency": "AUD",
 			"smoker": false,
-			"maritalStatus": "single",
+			"maritalStatus": "s",
 			"rating": 3
 		},
 		{
 			"empId": 800,
-			"empName": "Thimothi",
-			"salary": 50000,
+			"empName": "Theta",
+			"salary": 80000,
 			"currency": "EUR",
-			"smoker": false,
-			"maritalStatus": "married",
-			"rating": 2
+			"smoker": true,
+			"maritalStatus": "s",
+			"rating": 5
 		},
 		{
 			"empId": 900,
-			"empName": "Iris",
+			"empName": "Iota",
 			"salary": 90000,
 			"currency": "INR",
 			"smoker": true,
-			"maritalStatus": "married",
+			"maritalStatus": "m",
 			"rating": 2
 		},
 		{
 			"empId": 1000,
-			"empName": "Kaplan",
-			"salary": 40000,
+			"empName": "Kappa",
+			"salary": 100000,
 			"currency": "USD",
-			"smoker": false,
-			"maritalStatus": "married",
-			"rating": 3
+			"smoker": true,
+			"maritalStatus": "s",
+			"rating": 4
 		}
 
 

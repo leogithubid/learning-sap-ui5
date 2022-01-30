@@ -38,7 +38,7 @@
 		{
 			"empId": 400,
 			"empName": "Delta",
-			"salary": 40000,
+			"salary": 400000,
 			"currency": "INR",
 			"smoker": true,
 			"maritalStatus": "s",

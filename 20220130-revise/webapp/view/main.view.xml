@@ -1,8 +1,51 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc"
           controllerName="home.controller.main"
+          xmlns:u="sap.ui.unified"
           xmlns:f="sap.ui.layout.form"
+          xmlns:table="sap.ui.table"
           xmlns:core="sap.ui.core"
           xmlns="sap.m">
+            <table:Table alternateRowColors="true" rows="{/empTab}">
+                <table:Column>
+                    <Label text="Employee Id"></Label>
+                    <table:template>
+                        <Text text="{empId}"></Text>
+                    </table:template>
+                </table:Column>
+                <table:Column>
+                    <Label text="Employee Name"></Label>
+                    <table:template>
+                        <Text text="{empName}"></Text>
+                    </table:template>
+                </table:Column>
+                <table:Column>
+                    <Label text="Salary"></Label>
+                    <table:template>
+                        <u:Currency value="{salary}" currency="{currency}"></u:Currency>
+                    </table:template>
+                </table:Column>
+                <table:Column>
+                    <Label text="Smoker"></Label>
+                    <table:template>
+                        <CheckBox selected="{smoker}"></CheckBox>
+                    </table:template>
+                </table:Column>
+                <table:Column>
+                    <Label text="Marital Status"></Label>
+                    <table:template>
+                        <Select selectedKey="{maritalStatus}">
+                            <core:Item key="m" text="married"></core:Item>
+                            <core:Item key="s" text="single"></core:Item>
+                        </Select>
+                    </table:template>
+                </table:Column>
+                <table:Column>
+                    <Label text="Rating"></Label>
+                    <table:template>
+                        <RatingIndicator value="{rating}"></RatingIndicator>
+                    </table:template>
+                </table:Column>                                
+            </table:Table>
         <f:SimpleForm editable="true" layout="GridLayout">
             <f:title>
                 <core:Title text="Employee Details"></core:Title>

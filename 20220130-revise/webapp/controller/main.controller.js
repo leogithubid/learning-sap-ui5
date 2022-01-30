@@ -1,11 +1,19 @@
 //scaffolding template
 sap.ui.define(
-    ["sap/ui/core/mvc/Controller"],//load dependencies
-    function(oController){//the dependencies pass the objects to this
+    ["sap/ui/core/mvc/Controller",
+    "home/model/model"],//load dependencies
+    function(oController,modelJS){//the dependencies pass the objects to this
         return oController.extend("home.controller.main",{
             onInit:function(){
                 console.log("init");
-                //create model object
+                //using model.js create model now
+                var oModelOne = modelJS.createModel("model/mockData.json");
+                sap.ui.getCore().setModel(oModelOne);
+                var oModelTwo = modelJS.createModel("model/mockData2.json");
+                sap.ui.getCore().setModel(oModelTwo);
+                console.log(oModelOne);
+
+/*                 //create model object
                 var oModel = new sap.ui.model.json.JSONModel();
                 //load data
                 oModel.loadData("model/employeeData.json");
@@ -16,6 +24,7 @@ sap.ui.define(
                 console.log("view",this.getView());
                 this.getView().byId("inputSalary").bindValue('/employeeStructure/salary');
                 this.getView().byId("inputCurrency").bindProperty("value","/employeeStructure/currency");
+             */
             },
             onBeforeRendering:function(){
                 console.log("before");

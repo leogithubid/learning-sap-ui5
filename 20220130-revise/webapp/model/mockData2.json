@@ -10,7 +10,7 @@
 	},
 	"empTab": [{
 			"empId": 100,
-			"empName": "Omicron",
+			"empName": "Alexiss",
 			"salary": 10000,
 			"currency": "AUD",
 			"smoker": true,
@@ -65,7 +65,7 @@
 		{
 			"empId": 700,
 			"empName": "Ethan",
-			"salary": 30000,
+			"salary": 300000,
 			"currency": "INR",
 			"smoker": false,
 			"maritalStatus": "single",
