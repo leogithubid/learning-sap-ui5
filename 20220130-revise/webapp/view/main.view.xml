@@ -3,7 +3,7 @@
           xmlns:f="sap.ui.layout.form"
           xmlns:core="sap.ui.core"
           xmlns="sap.m">
-        <f:SimpleForm>
+        <f:SimpleForm editable="true" layout="GridLayout">
             <f:title>
                 <core:Title text="Employee Details"></core:Title>
             </f:title>
@@ -14,6 +14,6 @@
                 <Label id="labelSalary" text="Salary"></Label>
                 <Input id="inputSalary" value=""></Input>
                 <Label id="labelCurrency" text="Currency"></Label>
-                <Input id="inputCurrency" value=""></Input>
+                <Input id="inputCurrency" value="" enabled="{= ${/employeeStructure/salary} > 1000000 ? true : false}"></Input>
         </f:SimpleForm>
 </mvc:View>
