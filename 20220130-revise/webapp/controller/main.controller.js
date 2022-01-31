@@ -12,6 +12,10 @@ sap.ui.define(
                 var oModelTwo = modelJS.createModel("model/mockData2.json");
                 sap.ui.getCore().setModel(oModelTwo);
                 console.log(oModelOne);
+                console.log("hello");
+                var oResourceModel = modelJS.createResourceModel("i18n/i18n.properties");
+                console.log(oResourceModel);
+                sap.ui.getCore().setModel(oResourceModel,"i18n");
 
 /*                 //create model object
                 var oModel = new sap.ui.model.json.JSONModel();
@@ -26,6 +30,11 @@ sap.ui.define(
                 this.getView().byId("inputCurrency").bindProperty("value","/employeeStructure/currency");
              */
             },
+            flipModel:function(){
+                var oModel = modelJS.createXMLModel("model/mockData3.xml");
+                sap.ui.getCore().setModel(oModel);
+                 
+             },
             onBeforeRendering:function(){
                 console.log("before");
             },
